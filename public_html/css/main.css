@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "CMUTypewriter";
+  src: url("../img/CMUTypewriter-Light.woff") format("woff"), url("../img/CMUTypewriter-Light.ttf") format("truetype"); }
+
+html {
+  font-family: "CMUTypewriter";
+  background-image: url("../img/bg.jpg"); }
+  html a {
+    color: blue; }
+    html a:visited {
+      color: inherit; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 48px; }
+  header span {
+    margin: 0 24px 0 0; }
+  header .title {
+    padding-right: 24px; }
+  header .link-header {
+    display: flex;
+    flex-flow: column; }
+    header .link-header span {
+      display: block; }
+    header .link-header > a {
+      margin: 0 5px; }

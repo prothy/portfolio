@@ -1,0 +1,53 @@
+@font-face {
+	font-family: "CMUTypewriter";
+	src: url('../img/CMUTypewriter-Light.woff') format('woff'),
+		 url('../img/CMUTypewriter-Light.ttf') format('truetype');
+}
+html {
+	//background: #dbffe9;
+	font-family: "CMUTypewriter";
+	background-image: url("../img/bg.jpg");
+
+	a {
+		color: blue;
+		&:visited {
+			color: inherit;
+		}
+	}
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 48px;
+
+    span {
+        margin: 0 24px 0 0;
+    }
+
+    .title {
+    	padding-right: 24px;
+    }
+
+    .link-header {
+    	display: flex;
+        flex-flow: column;
+        
+        span {
+            display: block;
+        }
+
+        > a {
+            margin: 0 5px;
+        }
+
+        &.lh--internal {}
+
+        &.lh--external {
+            //margin-left: auto;
+       
+        }
+    }
+}
