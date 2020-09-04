@@ -2,7 +2,7 @@
   "name": "lukac.su",
   "version": "1.0.0",
   "description": "",
-  "main": "./public_html/js/index.js",
+  "private": true,
   "directories": {
     "lib": "lib"
   },
