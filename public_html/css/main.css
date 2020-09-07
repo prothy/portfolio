@@ -2,28 +2,81 @@
   font-family: "CMUTypewriter";
   src: url("../img/CMUTypewriter-Light.woff") format("woff"), url("../img/CMUTypewriter-Light.ttf") format("truetype"); }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%; }
+
 html {
   font-family: "CMUTypewriter";
-  background-image: url("../img/bg.jpg"); }
+  background: #57a580;
+  overflow-x: hidden; }
   html a {
     color: blue; }
     html a:visited {
       color: inherit; }
 
+.title {
+  display: block;
+  position: sticky;
+  top: 20px;
+  margin: 50px 15px 0 2%;
+  z-index: 0; }
+  .title.logo {
+    fill: currentColor; }
+  .title.heading {
+    font: bold 80pt "Helvetica", sans-serif;
+    color: #F4C430;
+    width: 600px; }
+
 header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-left: 48px; }
+  width: 100%; }
   header span {
     margin: 0 24px 0 0; }
-  header .title {
-    padding-right: 24px; }
   header .link-header {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    display: none; }
     header .link-header span {
       display: block; }
     header .link-header > a {
-      margin: 0 5px; }
+      margin: 0 5px;
+      color: orangered;
+      font: normal bold 22pt "Helvetica", sans-serif;
+      text-decoration: none;
+      letter-spacing: 1pt;
+      background: #bdbdbd;
+      padding: 2px 15px; }
+      header .link-header > a:hover {
+        text-decoration: underline; }
+
+#saentis-bg {
+  width: 100%;
+  position: relative;
+  top: -170px;
+  margin-bottom: -177px;
+  z-index: 1;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+.content {
+  position: relative;
+  background: #5fb38b;
+  z-index: 1; }
+
+@media screen and (max-device-width: 630px) {
+  .title {
+    margin-left: 5px; }
+    .title.heading {
+      font-size: 50pt;
+      width: 300px; } }
+
+@media screen and (max-device-width: 1220px) {
+  #saentis-bg {
+    top: -30px;
+    margin-bottom: -37px; } }

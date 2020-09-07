@@ -1,5 +1,7 @@
+<span class="title">
+		<h1 class="title heading">LUKA CSURGAY</h1>
+</span>
 <header>
-	<span class="title"><h1>Luka Csurgay</h1></span>
 	<span class="link-header">
 		<span class="link-header lh--internal">
 			<a href="/">Home</a>
