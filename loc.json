@@ -1,0 +1,16 @@
+{
+  "en": {
+    "about": {
+      "title": "About me",
+      "text": "Current Student at Codecool in Budapest, Hungary."
+    },
+    "projects": {
+      "title": "Projects",
+      "text": "Here is a humble list of my projects."
+    },
+    "links": {
+      "title": "Links",
+      "text": "You can find me at the following places."
+    }
+  }
+}
