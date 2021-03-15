@@ -1,7 +1,11 @@
+/* ROOT */
+
 @font-face {
   font-family: "Lavigne";
-  src: url("/Lavigne.otf");
+  src: url("../assets/Lavigne.otf");
 }
+
+/* HTML */
 
 html {
   min-height: 100vh;
@@ -22,6 +26,8 @@ body {
   padding: 30px;
 }
 
+/* HEADER */
+
 header {
   width: 100%;
   display: flex;
@@ -35,6 +41,8 @@ header h1 {
   text-shadow: 2px 2px black;
   margin-top: -30px;
 }
+
+/* ARTICLE */
 
 article {
   width: 80%;
