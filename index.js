@@ -5,6 +5,7 @@ const app = express();
 const port = 3000;
 
 const filetext = JSON.parse(fs.readFileSync("./loc.json", "utf8"));
+const langlist = Object.keys(filetext);
 let lang = "en";
 
 /* EXPRESS INIT */
@@ -22,11 +23,8 @@ app.use("/assets", express.static(__dirname + "/public/assets"));
 
 /* ROUTER HANDLING */
 
-console.log(filetext);
-
 app.get("", (req, res) => {
-  res.render("index");
-  lang = "en";
+  res.redirect(`/${lang}`);
 });
 
 app.get("/:lang", (req, res) => {
@@ -35,9 +33,7 @@ app.get("/:lang", (req, res) => {
     return;
   }
   lang = req.params.lang;
-  res.render("index", {
-    langcont: filetext[lang],
-  });
+  res.render("index", filetext[lang]);
 });
 
 /* HTML MODIFICATION */
