@@ -18,7 +18,7 @@ html * {
 }
 
 body {
-  background: grey;
+  background: #fff567;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -31,25 +31,31 @@ body {
 header {
   width: 100%;
   display: flex;
-  align-content: center;
+  align-content: space-between;
   word-break: break-all;
+  margin-bottom: 2em;
 }
 
 header h1 {
   font-size: 100pt;
   color: rgb(0, 195, 202);
   text-shadow: 2px 2px black;
-  margin-top: -30px;
+  margin-top: -0.2em;
+  line-height: 1em;
 }
 
 /* ARTICLE */
 
-article {
+.main {
   width: 80%;
 }
 
-article h2 {
+.main h2 {
   font-size: 50pt;
   color: orangered;
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 2px #333;
+}
+
+.main.content * {
+  line-height: 1.5em;
 }
